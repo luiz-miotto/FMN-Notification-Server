@@ -1,0 +1,6 @@
+March 31st 2024:
+* Need to figure out why the fuck because "this.emailService" is null but only when attempting to send email via project. If email is sent via http request from an external source like postman, it works fine
+what hte fuck does it imply if emailService is used to fire the email but can only be found/set when request comes from outside? Is the eventController class that is successfully provinding emailService to the
+emailServiceImpl class?
+Or does it have something to do wiht the application/Spring losing the context of any sort of autowired service if not provided via the main class
+        If so, then why does it not keep the EmailService class that is autowired in the main application class?
